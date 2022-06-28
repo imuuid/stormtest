@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/stehack27/storm/main/Web/guiLogo.png" width="40%">
   <h3>Open source cheat with WebGui</h3>
-  <a href="https://t.me/sterhack">@stehack</a><br><br>
+  <a href="https://t.me/stehack">@stehack</a><br><br>
 </div>
 
 ### Usage
