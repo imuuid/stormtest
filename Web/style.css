@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
 html{
     overflow: hidden;
 }
@@ -21,6 +22,7 @@ body{
     box-shadow: none !important;
     outline: none !important;
 }
+
 
 /*GUI BOX*/
 #guiMain {
@@ -75,7 +77,6 @@ body{
     margin-left: 1.5rem;
 }
 
-
 .guiBox .keyBindControl{
     margin-top: 2rem;
     margin-left: 1.5rem;
@@ -100,12 +101,41 @@ body{
     transform: scale(0.95)
 }
 
-
-
 .guiBox .bottomGui{
     margin-top: 6.5rem;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+}
+
+
+/*GUI FORMATTING*/
+.spacer{
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.red{
+    background-color: #f74141;
+    transition: 0.2s;
+}
+
+.red:hover{
+    cursor: pointer;
+    background-color: #f741419f;
+}
+
+.yellow{
+    background-color: rgb(222, 222, 2);
+}
+
+.green{
+    background-color: #04c57b;
+}
+
+p{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .guiBox .bottomGui a{
@@ -136,37 +166,6 @@ body{
     color: #725ac1;
 }
 
-
-/*GUI FORMATTING*/
-.spacer{
-    display: inline-block;
-    margin-right: 4px;
-}
-
-.red{
-    background-color: #f74141;
-    transition: 0.2s;
-}
-.red:hover{
-    cursor: pointer;
-    background-color: #f741419f;
-}
-
-.yellow{
-    background-color: rgb(222, 222, 2);
-}
-
-.green{
-    background-color: #04c57b;
-}
-
-
-p{
-    color: white;
-    font-size: 18px;
-    font-weight: 500;
-}
-
 input[type="range"] {
     -webkit-appearance: none;
     appearance: none;
@@ -195,7 +194,6 @@ input[type="range"]::-webkit-slider-thumb {
     border-radius: 50%;
 }
  
-
 input[type="range"]::-moz-range-track {
     background-color: #725ac1;
     border-radius: 0.5rem;
@@ -211,8 +209,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 
-
-
+/*PRELOADER ANIMATION*/
 .loader-wrapper {
     width: 100%;
     height: 100%;
