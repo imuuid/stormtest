@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+html{
+    overflow: hidden;
+}
+
+body{
+    background-color: #242038;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    margin-top: 5rem;
+}
+
+:focus{
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+*[data-focus] {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/*GUI BOX*/
+#guiMain {
+    position: absolute;
+    z-index: 9;
+}
+  
+#guiMainTitle {
+    cursor: grab;
+    z-index: 10;
+}
+
+.guiBox{
+    background-color: rgba(47, 44, 59, 0.5);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 50rem;
+    height: 30rem;
+}
+
+.guiBox.guiFade{
+    transition: 0.5s;
+    transform: scale(0)
+}
+
+.guiBox .titleBar{
+    background-color: #2F2C3B;
+    height: 35px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px 0px 0px 10px;
+}
+
+.guiBox .titleBar .circle{
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+}
+
+.guiLogo{
+    margin-top: 1rem;
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.guiBox .cpsControl{
+    margin-top: 3rem;
+    margin-left: 1.5rem;
+}
+
+
+.guiBox .keyBindControl{
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+}
+
+.guiBox .buttonGui{
+    border-radius: 10px;
+    background-color: #725ac1;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    border: none;
+    padding: 4px 12px 4px 12px;
+    transition: 0.2s;
+}
+
+.guiBox .buttonGui:hover{
+    opacity: 0.9;
+}
+
+.guiBox .buttonGui:active{
+    transform: scale(0.95)
+}
+
+
+
+.guiBox .bottomGui{
+    margin-top: 6.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.guiBox .bottomGui a{
+    color: white;
+    transition: .2s;
+    outline: 0;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.guiBox .bottomGui a:hover,
+.guiBox .bottomGui a:focus {
+    color: white;
+    outline: 0;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.guiBox .bottomGui a i {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+    margin: 0 8px;
+    transition: .2s;
+}
+
+.guiBox .bottomGui a i:hover,
+.guiBox .bottomGui a i:focus {
+    color: #725ac1;
+}
+
+
+/*GUI FORMATTING*/
+.spacer{
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.red{
+    background-color: #f74141;
+    transition: 0.2s;
+}
+.red:hover{
+    cursor: pointer;
+    background-color: #f741419f;
+}
+
+.yellow{
+    background-color: rgb(222, 222, 2);
+}
+
+.green{
+    background-color: #04c57b;
+}
+
+
+p{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 15rem;
+}
+ 
+input[type="range"]:focus {
+   outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #725ac1;
+    border-radius: 50rem;
+    height: 0.5rem;  
+}
+ 
+input[type="range"]::-webkit-slider-thumb {
+   -webkit-appearance: none; 
+    appearance: none;
+    margin-top: -6px; 
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+ 
+
+input[type="range"]::-moz-range-track {
+    background-color: #725ac1;
+    border-radius: 0.5rem;
+    height: 0.5rem;
+}
+
+input[type="range"]::-moz-range-thumb {
+    border: none;
+    border-radius: 0; 
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+
+
+
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    background-color: #242038;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.loader {
+    width: 50%;
+    animation: loading 1s linear infinite;
+}
+
+.loader-wrapper.hidden{
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes loading {
+    100% {transform: translateY(200px);}
+}
+
+@keyframes fadeOut {
+    100% {opacity: 0; visibility: hidden;}
+}
