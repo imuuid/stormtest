@@ -10,7 +10,6 @@ DWORD WINAPI MainThread(HMODULE hModule) {
 		server.join();
 		return 0;
 	}
-	
 }
 
 
