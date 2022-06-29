@@ -24,4 +24,4 @@ This project use the library [Mongoose](https://github.com/cesanta/mongoose) for
 
 ### Info
 This cheat it's just an autoclicker at the moment, updates will come.<br><br>
-<div align="center"><img src="https://i.imgur.com/8E7YjYO.png" width="30%"></div>
+<div align="center"><img src="https://i.imgur.com/8E7YjYO.png" width="40%"></div>
