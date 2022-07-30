@@ -8,7 +8,7 @@
 
 ### Usage
 For launch Storm.dll you make sure to close AnyDesk (it won't start if it's open).<br>
-• Launch Minecraft
+• Launch Minecraft<br>
 • Launch the terminal app as administrator.<br>
 • Type `regsvr32 <Path to Storm.dll>`<br>
 _Don't worry about regsvr32.exe error, it'll work anyway_<br><br>
