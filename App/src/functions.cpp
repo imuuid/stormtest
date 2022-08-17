@@ -13,8 +13,7 @@ void driver(){
     while (true) {
         int newDelay = (90 / fDelay) * 10;
         if (GetAsyncKeyState(keyB)) {
-            if (click) click = false;
-            else click = true;
+            click = !click;
             Sleep(150);
         }
 
