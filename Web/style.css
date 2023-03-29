@@ -5,7 +5,7 @@ html{
 }
 
 body{
-    background-color: #242038;
+    background-color: #692023;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -163,7 +163,7 @@ p{
 
 .guiBox .bottomGui a i:hover,
 .guiBox .bottomGui a i:focus {
-    color: #725ac1;
+    color: #692023;
 }
 
 input[type="range"] {
@@ -217,7 +217,7 @@ input[type="range"]::-moz-range-thumb {
     z-index: 99;
     top: 0;
     left: 0;
-    background-color: #242038;
+    background-color: #520306;
     justify-content: center;
     display: flex;
     align-items: center;
